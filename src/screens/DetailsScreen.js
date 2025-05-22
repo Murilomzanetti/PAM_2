@@ -5,8 +5,8 @@ const windowWidth = Dimensions.get('window').width;
 
 export default function DetailsScreen({ navigation }) {
     return(
-        <View style={StyleSheet.container}>
-            <Text style={StyleSheet.title}>Details Screen</Text>
+        <View style={styles.container}>
+            <Text style={styles.title}>Details Screen</Text>
             <View style={styles.buttonContainer}>
                 <Button
                 title="Go to Home"
@@ -25,19 +25,19 @@ export default function DetailsScreen({ navigation }) {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#faf0E6' //Cor de fundo da tela
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#f0f0f0', // Cor de fundo da tela
     },
     title: {
-        fontSize: 24,
-        marginBottom: 20,
+      fontSize: 24,
+      marginBottom: 20,
     },
     buttonContainer: {
-        backgroundColor: '#ffebcd', //Cor de fundo do contaiener do botão
-        margin: 10,
-        width: windowWidth * 0.5, // 50% da largura da tela
-        borderRadius: 5,
+      backgroundColor: '#ddd', // Cor de fundo do container do botão
+      margin: 10,
+      width: windowWidth * 0.5, // 50% da largura da tela
+      borderRadius: 5,
     },
-});
+  });
